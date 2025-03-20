@@ -3,7 +3,6 @@
 ## Overview
 This project is a **FastAPI-based web scraper** designed to collect meal data from the University of Maryland (UMD) dining halls. It scrapes meal options, nutritional information, and dietary restrictions, then stores the data in **MongoDB**. The scraped data is exposed via a RESTful API, which can be consumed by a **Swift app** (or any other frontend) to display meal information.
 
----
 
 ## Features
 
@@ -33,8 +32,6 @@ This project is a **FastAPI-based web scraper** designed to collect meal data fr
    - The API can be consumed by a **Swift app** to display meal options, nutritional facts, and dietary restrictions.
    - Provides a clean and efficient way to fetch and display dining hall data.
 
----
-
 ## Requirements
 
 To run this application, you need the following Python libraries and tools installed:
@@ -54,3 +51,9 @@ To run this application, you need the following Python libraries and tools insta
 You can install the required Python libraries using `pip`:
 ```bash
 pip install fastapi uvicorn requests beautifulsoup4 pymongo python-dotenv
+```
+
+## Usage
+
+This API can be used by any frontend to retrieve the menu items for UMD dining halls for the next seven days. It provides a simple interface where developers can make requests to get meal data for specific dining hall locations and dates. This can be particularly useful for building dynamic meal planners, websites, or apps that display UMD dining hall menus in real-time. Students and developers can leverage this API to access the meal information and integrate it into their applications or use it for research and academic purposes. The API provides a streamlined approach to get accurate and up-to-date meal information without manually scrapping the dining hall websites.
+
